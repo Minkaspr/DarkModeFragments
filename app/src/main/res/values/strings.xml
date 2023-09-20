@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DarkModeFragments</string>
+    <string name="page_1">Inicio</string>
+    <string name="page_2">Carrito</string>
+    <string name="page_3">Historial</string>
+    <string name="page_4">Ajustes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ajust_silencio">Silencio</string>
+    <string name="ajust_vibracion">Vibración</string>
+    <string name="ajust_tema">Tema</string>
+    <string name="ajust_titulo">AJUSTES</string>
+    <string name="descripcion_switch_silencio">switch off\n</string>
+    <string name="home_titulo">INICIO</string>
+    <string name="home_tit">Texto de título</string>
+    <string name="home_subTit">Holaaaa</string>
+</resources>
