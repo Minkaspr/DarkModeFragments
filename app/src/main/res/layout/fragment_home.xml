@@ -13,13 +13,13 @@
         android:text="@string/home_titulo" />
 
     <TextView
-        style="@style/Title"
+        style="@style/Titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/home_tit" />
 
     <TextView
-        style="@style/Subtitle"
+        style="@style/Subtitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/home_subTit" />
