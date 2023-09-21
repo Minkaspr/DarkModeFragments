@@ -14,7 +14,6 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
@@ -25,7 +24,6 @@ public class SettingsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -55,11 +53,11 @@ public class SettingsFragment extends Fragment {
                 new MaterialAlertDialogBuilder(context)
                         .setTitle("Tema")
                         .setSingleChoiceItems(temas, temaActual, null)
-                        .setPositiveButton("Aceptar", (dialogInterface, i) -> {
+                        .setPositiveButton("Aplicar", (dialogInterface, i) -> {
                             // Obtener la selección del usuario
                             int selectedPosition = ((AlertDialog) dialogInterface).getListView().getCheckedItemPosition();
 
-                            // Actualizar el tema
+                            // Actualizar el tema y la bandera temaCambiado
                             if (selectedPosition != -1) {
                                 actualizarTema(selectedPosition, sharedPreferences);
                             }
@@ -74,6 +72,7 @@ public class SettingsFragment extends Fragment {
                         .show();
             }
         });
+
     }
 
     private void actualizarTema(int temaSeleccionado, SharedPreferences sharedPreferences) {
